@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, watch } from "vue";
+import { ref, onMounted, watch } from "vue";
 
 const todos = ref([]);
 const name = ref("");
@@ -78,7 +78,7 @@ const addTodo = () => {
     return 
   }
 
-  todos.value.push({
+  todos?.value.push({
     content: inputContent.value,
     category: inputCategory.value,
     done: false,
@@ -87,7 +87,7 @@ const addTodo = () => {
 
 }
 
-const removeTodo = todo =>{
+const removeTodo = todo => {
   todos.value = todos.value.filter(t => t !== todo )
 }
 
