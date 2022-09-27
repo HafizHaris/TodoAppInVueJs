@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary: #ea40a4;
   --business: #3a82ee;
   --personal: var(--primary);
@@ -229,4 +229,4 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
-}
+} */
